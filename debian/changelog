@@ -1,0 +1,20 @@
+lua-inspect (3.1.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * control:
+    + Exclude lua-busted Build-Depends for nocheck Build-Profile
+    + Add .git to Vcs-Git URL
+    + Set Rules-Requires-Root: no
+    + Bump debhelper compat to 13 and use debhelper-compat Build-Depends
+    + Declare compliance with Policy 4.5.0
+  * debian/tests:
+    + Add lua-busted to Depends
+    + Remove unnecessary rw-build-tree Restriction
+
+ -- James McCoy <jamessan@debian.org>  Mon, 01 Jun 2020 22:56:25 -0400
+
+lua-inspect (3.1.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #910121)
+
+ -- Jason Pleau <jason@jpleau.ca>  Thu, 01 Nov 2018 22:00:19 -0400

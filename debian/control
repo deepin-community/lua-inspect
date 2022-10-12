@@ -1,0 +1,27 @@
+Source: lua-inspect
+Section: interpreters
+Priority: optional
+Maintainer: Jason Pleau <jason@jpleau.ca>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-lua,
+ lua-busted <!nocheck>,
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://luarocks.org/modules/kikito/inspect
+Vcs-Git: https://salsa.debian.org/lua-team/lua-inspect.git
+Vcs-Browser: https://salsa.debian.org/lua-team/lua-inspect
+
+Package: lua-inspect
+Architecture: all
+Depends:
+ ${misc:Depends},
+Provides:
+ ${lua:Provides},
+XB-Lua-Versions: ${lua:Versions}
+Description: Lua table visualizer, ideal for debugging
+ This library transforms any Lua value into a human-readable
+ representation. It is especially useful for debugging errors in tables.
+ .
+ The objective here is human understanding (i.e. for debugging), not
+ serialization or compactness.
